@@ -3,9 +3,9 @@ package inheritance;
 public class Customer {
     String name;
     String type; // "Regular" or "Gold"
-    double basePrice;
+    public double basePrice;
 
-    public Customer(String name, String type, double basePrice) {
+    public Customer(String name, double basePrice) {
         this.name = name;
         this.type = type;
         this.basePrice = basePrice;
@@ -18,5 +18,12 @@ public class Customer {
         } else {
             return basePrice + 50; // Regular shipping fee
         }
+    }
+
+    public void displayDetails() {
+        // Declaring core details here so subclasses don't have to repeat them
+        System.out.println("--- Product Invoice ---");
+        System.out.println("Customer: " + name);
+        System.out.println("Product Price: " + basePrice);
     }
 }
