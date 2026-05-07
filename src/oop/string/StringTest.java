@@ -1,4 +1,4 @@
-package oop;
+package oop.string;
 
 public class StringTest {
 
