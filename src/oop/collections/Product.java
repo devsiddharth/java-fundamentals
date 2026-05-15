@@ -17,7 +17,7 @@ public class Product {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return id == product.id ;
+        return id == product.id;
     }
 
     @Override
@@ -33,5 +33,10 @@ public class Product {
                 ", productSerialNumber='" + productSerialNumber + '\'' +
                 '}';
     }
+
+//    @Override
+//    public int compareTo(Product o) {
+//        //  return Integer.compare(o.id, id);
+//        return this.productName.compareTo(o.productName);
 }
 
