@@ -8,7 +8,7 @@ public class CustomerUI {
         System.out.println("Signup Form");
         int id = InputUtil.getInt("Enter Id");
         String name = InputUtil.getString("Enter Name");
-         String email = InputUtil.getString("Enter Email");
+        String email = InputUtil.getString("Enter Email");
         Customer customer = new Customer(id, name, email);
         return customer;
     }

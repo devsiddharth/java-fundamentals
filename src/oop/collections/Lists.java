@@ -2,10 +2,11 @@ package oop.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class Lists {
     public static void main(String[] args) {
-        Collection<Integer> n = new ArrayList<>();
+        LinkedList<Integer> n = new LinkedList<>();
         n.add(34);
         n.add(18);
         n.add(52);
