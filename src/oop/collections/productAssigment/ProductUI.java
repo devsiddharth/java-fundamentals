@@ -6,7 +6,7 @@ public class ProductUI {
     private ProductController handler;
 
     public ProductUI() {
-        handler = new ProductController();
+        controller = new ProductController();
     }
 
     public void start() {
