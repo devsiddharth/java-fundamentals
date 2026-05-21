@@ -7,12 +7,10 @@ public class Main {
         //1. Display all customer
         //2. Add new customer
         CustomerService customerService = new CustomerService();
-        List<Customer> customers = customerService.getCustomers();
-        customerService.displayAllCustomer(customers);
+//        customerService.displayAllCustomer(customers);
 
         //Add new customer
         CustomerUI ui = new CustomerUI();
-        Customer customer = ui.displaySignupForm();
         /*boolean isSuccess = customerService.addCustomer(customer);
         if(isSuccess)
             System.out.println("Customer added successfully  " + customer.name);
@@ -24,6 +22,19 @@ public class Main {
 //            System.out.println("Customer added successfully  " + savedCustomer.name);
 //        else
 //            System.out.println("Customer not added");
+
+        // 1. Show the user the form and capture the customer object they type in
+        Customer newCustomer = ui.displaySignupForm();
+
+        // 2. Add that newly created customer object into the service's existing list
+        customerService.addCustomer(newCustomer);
+
+        // 3. Retrieve the completely updated list (with the original 6 + new user)
+        List<Customer> updatedList = customerService.getCustomers();
+
+        // 4. Pass the list back to the UI so it can print the results out nicely
+        ui.displayAllCustomers(updatedList);
+
     }
 
 }
