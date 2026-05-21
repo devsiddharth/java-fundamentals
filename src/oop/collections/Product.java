@@ -3,9 +3,9 @@ package oop.collections;
 import java.util.Objects;
 
 public class Product {
-    int id;
-    String productName;
-    String productSerialNumber;
+    public int id;
+    public String productName;
+    public String productSerialNumber;
 
     public Product(int id, String productName, String productSerialNumber) {
         this.id = id;
