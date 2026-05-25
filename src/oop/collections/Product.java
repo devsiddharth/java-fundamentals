@@ -27,11 +27,11 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "[" +
                 "id=" + id +
                 ", productName='" + productName + '\'' +
                 ", productSerialNumber='" + productSerialNumber + '\'' +
-                '}';
+                ']';
     }
 
 //    @Override

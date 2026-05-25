@@ -3,7 +3,7 @@ package oop.collections.productAssigment;
 import oop.collections.productAssigment.InputUtil.InputUtil;
 
 public class ProductUI {
-    private ProductController handler;
+    private ProductController controller;
 
     public ProductUI() {
         controller = new ProductController();
@@ -24,17 +24,17 @@ public class ProductUI {
 
             try {
                 if (choice == 1) {
-                    handler.saveProduct();
+                    controller.saveProduct();
                 } else if (choice == 2) {
-                    handler.findProductById();
+                    controller.findProductById();
                 } else if (choice == 3) {
-                    handler.showAllProducts();
+                    controller.showAllProducts();
                 } else if (choice == 4) {
-                    handler.updateProduct();
+                    controller.updateProduct();
                 } else if (choice == 5) {
-                    handler.deleteProductById();
+                    controller.deleteProductById();
                 } else if (choice == 6) {
-                    handler.deleteProductByObject();
+                    controller.deleteProductByObject();
                 } else if (choice == 7) {
                     System.out.println("Exiting...");
                     InputUtil.close();
